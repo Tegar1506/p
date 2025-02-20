@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "poppins", sans-serif; 
+}
+
+body {
+    background: #1c2333;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+.navbar {
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 400px;
+
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.home {
+    display:flex ;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    
+}
+
+.home-content{
+    max-width: 700px; 
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p{
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px 0 40px;
+
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 100px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    background-color: transparent;
+    border-radius: 200%;
+    font-size: 80px;
+    color: #00abf0;
+    text-decoration: none;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.home-sci a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ededed;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+.home-img {
+    max-width: 100px;
+    width: 100%;
+    margin: 0;
+}
+
+.home-img img{
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 120px;
+}
